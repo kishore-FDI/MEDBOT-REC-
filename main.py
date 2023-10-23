@@ -36,7 +36,7 @@ def user_input(user_question):
 
 
 def main():
-    st.set_page_config("R.M.K")
+    st.set_page_config("MedChatBot")
     st.header("Medical-ChatBot")
     with st.sidebar:
         st.title("Thank you for using our bot💖")
