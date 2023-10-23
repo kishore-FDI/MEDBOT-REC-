@@ -1,5 +1,5 @@
 import streamlit as st
-# import google.generativeai as palm
+import google.generativeai as palm
 from langchain.embeddings import GooglePalmEmbeddings
 from langchain.llms import GooglePalm
 from langchain.vectorstores import FAISS
