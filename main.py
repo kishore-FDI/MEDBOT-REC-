@@ -43,7 +43,7 @@ def main():
         st.subheader("PLEASE Click on Start")
 
         if st.button("Start"):
-            with st.spinner("Bot is waking up Zzz"):
+            with st.spinner("Processing"):
                 vector_store = get_vector_store()
                 st.session_state.conversation = get_conversational_chain(vector_store)
                 st.success("Done")
