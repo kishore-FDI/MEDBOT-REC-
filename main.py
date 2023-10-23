@@ -17,7 +17,7 @@ def get_vector_store():
 
 
 def get_conversational_chain(vector_store):
-    llm = GooglePalm(temperature=0.001)
+    llm = GooglePalm(temperature=0.1)
     memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
     conversation_chain = ConversationalRetrievalChain.from_llm(llm=llm, retriever=vector_store.as_retriever(),
                                                                memory=memory)
