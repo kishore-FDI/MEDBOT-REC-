@@ -55,17 +55,7 @@ def qa_bot():
     return qa
 
 
-if 'conversation_history' not in st.session_state:
-    st.session_state['conversation_history'] = []
-# Define sidebar content
-st.sidebar.title("Sample Questions")
-st.sidebar.write("1. What are the symptoms of COVID-19?")
-st.sidebar.write("2. How can I lower my blood pressure?")
-st.sidebar.write("3. Tell me about diabetes management.")
-st.sidebar.write("4. How to treat a common cold?")
-st.sidebar.write("5. Describe the signs of a heart attack.")
-st.sidebar.write("6. Contact Details:")
-st.sidebar.write("   Email: kishore22705@gmail.com.com")
+
 
 
 def user_input(user_question):
@@ -82,6 +72,17 @@ def user_input(user_question):
 def main():
     st.set_page_config("LLM-project")
     st.header("Medical-ChatBot")
+    if 'conversation_history' not in st.session_state:
+    st.session_state['conversation_history'] = []
+# Define sidebar content
+    st.sidebar.title("Sample Questions")
+    st.sidebar.write("1. What are the symptoms of COVID-19?")
+    st.sidebar.write("2. How can I lower my blood pressure?")
+    st.sidebar.write("3. Tell me about diabetes management.")
+    st.sidebar.write("4. How to treat a common cold?")
+    st.sidebar.write("5. Describe the signs of a heart attack.")
+    st.sidebar.write("6. Contact Details:")
+    st.sidebar.write("   Email: kishore22705@gmail.com.com")
     for message in st.session_state['conversation_history']:
         if message['role'] == 'user':
             st.text(f"User: {message['content']}")
