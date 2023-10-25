@@ -1,41 +1,41 @@
-# RAG Application
+# Medical ChatBot with Google LLM and Conversational Retrieval
 
-## Table of Contents
-1. Description
-2. Technologies Used
-3. Installation
-4. Usage
-5. Contributing
-6. License
-7. Contact
+![Medical ChatBot](https://your-image-url-here.png)
 
-## Description <a name="description"></a>
-This repository houses the codebase for a unique RAG (Retrieval-Augmented Generation) application. The application leverages general basic data, which has been meticulously collected and curated by hand, ensuring high quality and relevance.
+**Table of Contents**
+1. [Introduction](#introduction)
+2. [Project Overview](#project-overview)
+3. [Features](#features)
+4. [Getting Started](#getting-started)
+5. [Usage](#usage)
+6. [Sample Questions](#sample-questions)
+7. [Dependencies](#dependencies)
+8. [License](#license)
 
-## Technologies Used <a name="technologies-used"></a>
-The application is built using several state-of-the-art technologies:
+## 1. Introduction
 
-- **Langchain**: A powerful tool used for language processing and understanding, enabling the application to comprehend and generate human-like text.
-- **FAISS (Facebook AI Similarity Search)**: An efficient similarity search and clustering tool for high-dimensional vectors, allowing the application to find patterns and similarities in large datasets.
-- **GooglePaLM (Google Pre-training with Autoregressive Language Models)**: A pre-training tool for language models, which helps in improving the quality of text generation.
-- **Google Embeddings**: A tool that converts words into machine-readable inputs, enabling the application to understand and process human language.
-- **Streamlit**: A flexible tool used for creating interactive and user-friendly web applications.
+Welcome to the Medical ChatBot project, powered by Google LLM (Large Language Models) and Conversational Retrieval. This innovative chatbot is designed to provide you with quick and reliable medical information, answer your health-related questions, and assist you with general medical inquiries.
 
-## Installation <a name="installation"></a>
-Here you can provide detailed instructions on how to install your application, including any prerequisites, dependencies, and step-by-step installation procedures.
+![Medical ChatBot in Action](https://your-another-image-url-here.png)
 
-## Usage <a name="usage"></a>
-In this section, you can provide comprehensive instructions on how to use your application. You can include examples, screenshots, or even video tutorials to make it easier for users to understand.
+## 2. Project Overview
 
-## Contributing <a name="contributing"></a>
-If you're interested in contributing to this project, please feel free to fork the repository and submit a pull request. We appreciate any contributions that can help improve the application!
+This Medical ChatBot is built on the foundation of advanced AI and Natural Language Processing technologies. It leverages the power of Google LLM, Conversational Retrieval, and a robust vector store to provide accurate and relevant answers to your medical queries.
 
-## License <a name="license"></a>
-Include information about the license under which your project is distributed.
+## 3. Features
 
-## Contact <a name="contact"></a>
-For further queries or support related to this application, please feel free to reach out at (your contact information).
+- **Conversational Interaction**: Engage in natural conversations with the chatbot.
+- **Health Information**: Get information on a wide range of health topics and medical conditions.
+- **Quick Responses**: Receive instant responses to your medical questions.
+- **Sample Questions**: The chatbot is preloaded with sample questions for your convenience.
+- **Memory**: The chatbot remembers the conversation history, making it easier to follow the context.
 
-# MEDBOT-REC-
+## 4. Getting Started
 
-The website is being hosted at https://orca-med-chatbot.streamlit.app/  <3 please check them out 
+To use the Medical ChatBot, follow these steps:
+
+1. Ensure you have Python installed on your system.
+
+2. Clone the project repository:
+   ```bash
+   git clone https://github.com/your-repo/medical-chatbot.git
