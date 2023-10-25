@@ -73,7 +73,9 @@ def main():
     st.set_page_config("LLM-project")
     st.header("Medical-ChatBot")
     if 'conversation_history' not in st.session_state:
-    st.session_state['conversation_history'] = []
+        st.session_state['conversation_history'] = []
+        
+    
 # Define sidebar content
     st.sidebar.title("Sample Questions")
     st.sidebar.write("1. What are the symptoms of COVID-19?")
