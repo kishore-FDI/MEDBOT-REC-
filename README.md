@@ -6,11 +6,9 @@
 1. [Introduction](#introduction)
 2. [Project Overview](#project-overview)
 3. [Features](#features)
-4. [Getting Started](#getting-started)
-5. [Usage](#usage)
-6. [Sample Questions](#sample-questions)
-7. [Dependencies](#dependencies)
-8. [License](#license)
+4. [Live Website](#live-website)
+5. [Sample Questions](#sample-questions)
+6. [License](#license)
 
 ## 1. Introduction
 
@@ -30,12 +28,26 @@ This Medical ChatBot is built on the foundation of advanced AI and Natural Langu
 - **Sample Questions**: The chatbot is preloaded with sample questions for your convenience.
 - **Memory**: The chatbot remembers the conversation history, making it easier to follow the context.
 
-## 4. Getting Started
+## 4. Live Website
 
-To use the Medical ChatBot, follow these steps:
+Access the live Medical ChatBot [here](https://orca-med-chatbot.streamlit.app/). Try it out now!
 
-1. Ensure you have Python installed on your system.
+## 5. Sample Questions
 
-2. Clone the project repository:
-   ```bash
-   git clone https://github.com/your-repo/medical-chatbot.git
+Feel free to ask the chatbot any medical questions, or you can start with the provided sample questions:
+
+1. "What are the symptoms of COVID-19?"
+2. "How can I lower my blood pressure?"
+3. "Tell me about diabetes management."
+4. "How to treat a common cold?"
+5. "Describe the signs of a heart attack."
+
+For any technical issues or inquiries, you can contact us at kishore22705@gmail.com.
+
+## 6. License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+---
+
+Enjoy using the Medical ChatBot, and stay informed about your health and medical concerns with the power of AI and natural language understanding!
