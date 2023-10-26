@@ -1,6 +1,7 @@
 # Medical ChatBot with Google LLM and Conversational Retrieval
+![Web capture_26-10-2023_23341_orca-med-chatbot streamlit app](https://github.com/kishore-FDI/MEDBOT-REC-/assets/147427164/75e0b99b-15c7-4bad-af1c-33684c48b3aa)
 
-![Medical ChatBot](https://your-image-url-here.png)
+
 
 **Table of Contents**
 1. [Introduction](#introduction)
