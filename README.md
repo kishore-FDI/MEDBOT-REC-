@@ -15,7 +15,11 @@
 
 Welcome to the Medical ChatBot project, powered by Google LLM (Large Language Models) and Conversational Retrieval. This innovative chatbot is designed to provide you with quick and reliable medical information, answer your health-related questions, and assist you with general medical inquiries.
 
-![Medical ChatBot in Action](https://your-another-image-url-here.png)
+
+
+https://github.com/kishore-FDI/MEDBOT-REC-/assets/147427164/925a5f0c-bf9f-4d0d-892a-c862838d2306
+
+
 
 ## 2. Project Overview
 
