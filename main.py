@@ -63,7 +63,7 @@ def retrieval_qa_chain(llm, prompt, db):
     return conversation_chain
 
 def qa_bot():
-    embeddings =HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    embeddings =GooglePalmEmbeddings()
     db = FAISS.load_local(faiss_index, embeddings)
     llm = GooglePalm(temperature=0.001)
     qa_prompt = set_custom_prompt()
