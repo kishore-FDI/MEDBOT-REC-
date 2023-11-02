@@ -7,7 +7,7 @@ from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
 import os
 
-# from langchain import PromptTemplate
+from langchain import PromptTemplate
 
 os.environ['GOOGLE_API_KEY'] = 'AIzaSyBwZZBnDZXJUrqF7f-m-m0zxT3fYFtcQB8'
 
