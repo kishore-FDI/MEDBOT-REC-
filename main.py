@@ -33,8 +33,10 @@ def retrieval_qa_chain(db):
 
 def qa_bot():
     embeddings = GooglePalmEmbeddings()
-    db = FAISS.load_local("faiss_index", embeddings)
-    qa = retrieval_qa_chain(db)
+    db = FAISS.load_local(DB_FAISS_PATH, embeddings)
+    llm = GooglePalm()
+    qa_prompt = set_custom_prompt()
+    qa = retrieval_qa_chain(llm, qa_prompt, db)
     return qa
 
 
