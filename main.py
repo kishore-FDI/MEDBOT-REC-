@@ -18,23 +18,55 @@ os.environ['GOOGLE_API_KEY'] = 'AIzaSyBwZZBnDZXJUrqF7f-m-m0zxT3fYFtcQB8'
 #     return vector_store
 
 
-def retrieval_qa_chain(db):
-    llm = GooglePalm(temperature=0.001)
-    memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
+# def retrieval_qa_chain(db):
+#     llm = GooglePalm(temperature=0.001)
+#     memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 
-    conversation_chain = ConversationalRetrievalChain.from_llm(llm=llm,
-                                                               retriever=db.as_retriever(search_kwargs={"k": 10}),
-                                                               memory=memory
-                                                               # ,
-                                                               # prompt=prompt
-                                                               )
+#     conversation_chain = ConversationalRetrievalChain.from_llm(llm=llm,
+#                                                                retriever=db.as_retriever(search_kwargs={"k": 10}),
+#                                                                memory=memory
+#                                                                # ,
+#                                                                # prompt=prompt
+#                                                                )
+#     return conversation_chain
+
+
+custom_prompt_template = """Use the following pieces of information to answer the user's question.
+If you don't know the answer, just say that you don't know, don't try to make up an answer.
+Try to answer in points.
+
+Context: {context}
+Question: {question}
+
+Return the answer below with the explanation in simple words with an example and deep knowledge.
+Answer with explanation in simple words:
+"""
+
+# Define Streamlit app
+
+
+# Create vector database (You may call this function when needed)
+# create_vector_db()
+
+def set_custom_prompt():
+    """
+    Prompt template for QA retrieval for each vector store
+    """
+    prompt = PromptTemplate(template=custom_prompt_template,
+                            input_variables=['context', 'question'])
+    return prompt
+
+def retrieval_qa_chain(llm, prompt, db):
+    memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
+    conversation_chain = ConversationalRetrievalChain.from_llm(llm=llm, retriever=db.as_retriever(search_kwargs={"k": 5}),
+                                                               memory=memory)
     return conversation_chain
 
-
 def qa_bot():
-    embeddings = GooglePalmEmbeddings()
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2",
+                                       model_kwargs={'device': 'cpu'})
     db = FAISS.load_local(DB_FAISS_PATH, embeddings)
-    llm = GooglePalm()
+    llm = GooglePalm(temperature=0.001)
     qa_prompt = set_custom_prompt()
     qa = retrieval_qa_chain(llm, qa_prompt, db)
     return qa
