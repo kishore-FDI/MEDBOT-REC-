@@ -126,7 +126,7 @@ def get_conversational_chain():
     vector_store = FAISS.load_local('faiss_index', embeddings)
     llm=GooglePalm()
     memory = ConversationBufferMemory(memory_key = "chat_history", return_messages=True)
-    conversation_chain = ConversationalRetrievalChain.from_llm(llm=llm, retriever=vector_store.as_retriever(), memory=memory)
+    conversation_chain = ConversationalRetrievalChain.from_llm(llm=llm, retriever=vector_store.as_retriever(search_kwargs={"k": 1}), memory=memory)
     return conversation_chain
 
 def user_input(user_question):
