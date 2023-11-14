@@ -123,7 +123,7 @@ os.environ['GOOGLE_API_KEY'] = 'AIzaSyBwZZBnDZXJUrqF7f-m-m0zxT3fYFtcQB8'
 #     main()
 def get_conversational_chain():
     embeddings =GooglePalmEmbeddings()
-    db = FAISS.load_local('faiss_index', embeddings)
+    vector_store = FAISS.load_local('faiss_index', embeddings)
     llm=GooglePalm()
     memory = ConversationBufferMemory(memory_key = "chat_history", return_messages=True)
     conversation_chain = ConversationalRetrievalChain.from_llm(llm=llm, retriever=vector_store.as_retriever(), memory=memory)
