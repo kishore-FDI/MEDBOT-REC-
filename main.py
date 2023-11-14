@@ -9,7 +9,7 @@ import os
 
 from langchain import PromptTemplate
 
-os.environ['GOOGLE_API_KEY'] = 'AIzaSyBwZZBnDZXJUrqF7f-m-m0zxT3fYFtcQB8'
+os.environ['GOOGLE_API_KEY'] = 'AIzaSyDnkcKAKzPIT3WFmxZMWL6UGP9XRaP6JgQ'
 
 
 # # def get_vector_store():
