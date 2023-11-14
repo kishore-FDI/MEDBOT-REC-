@@ -65,7 +65,7 @@ def retrieval_qa_chain(llm, prompt, db):
 def qa_bot():
     embeddings =GooglePalmEmbeddings()
     db = FAISS.load_local('faiss_index', embeddings)
-    llm = GooglePalm(temperature=0.001)
+    llm = GooglePalm(temperature=0.1)
     qa_prompt = set_custom_prompt()
     qa = retrieval_qa_chain(llm, qa_prompt, db)
     return qa
