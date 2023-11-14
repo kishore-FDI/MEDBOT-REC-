@@ -23,7 +23,7 @@ os.environ['GOOGLE_API_KEY'] = 'AIzaSyBwZZBnDZXJUrqF7f-m-m0zxT3fYFtcQB8'
 #     memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 
 #     conversation_chain = ConversationalRetrievalChain.from_llm(llm=llm,
-#                                                                retriever=db.as_retriever(search_kwargs={"k": 10}),
+#                                                                retriever=db.as_retriever(search_kwargs={"k": 1}),
 #                                                                memory=memory
 #                                                                # ,
 #                                                                # prompt=prompt
@@ -58,7 +58,7 @@ def set_custom_prompt():
 
 def retrieval_qa_chain(llm, prompt, db):
     memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
-    conversation_chain = ConversationalRetrievalChain.from_llm(llm=llm, retriever=db.as_retriever(search_kwargs={"k": 5}),
+    conversation_chain = ConversationalRetrievalChain.from_llm(llm=llm, retriever=db.as_retriever(search_kwargs={"k": 10}),
                                                                memory=memory)
     return conversation_chain
 
