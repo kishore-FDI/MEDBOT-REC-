@@ -46,7 +46,7 @@ Feel free to ask the chatbot any medical questions, or you can start with the pr
 
 For any technical issues or inquiries, you can contact us at kishore22705@gmail.com.
 
-## 6. License
+## 5. License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
