@@ -33,11 +33,8 @@ This Medical ChatBot is built on the foundation of advanced AI and Natural Langu
 - **Sample Questions**: The chatbot is preloaded with sample questions for your convenience.
 - **Memory**: The chatbot remembers the conversation history, making it easier to follow the context.
 
-## 4. Live Website
 
-Access the live Medical ChatBot [here](https://orca-med-chatbot.streamlit.app/). Try it out now!
-
-## 5. Sample Questions
+## 4. Sample Questions
 
 Feel free to ask the chatbot any medical questions, or you can start with the provided sample questions:
 
