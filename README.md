@@ -9,7 +9,7 @@
 3. [Features](#features)
 4. [Live Website](#live-website)
 5. [Sample Questions](#sample-questions)
-6. [License](#license)
+6. [License](#license) 
 
 ## 1. Introduction
 
